@@ -1,0 +1,1144 @@
+/*  IMPORTS  */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 20, ../sass/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+/* line 37, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 41, ../sass/_reset.scss */
+ul, li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+/* line 46, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 51, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 56, ../sass/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+}
+
+/* change colours to suit your needs */
+/* line 67, ../sass/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 74, ../sass/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 81, ../sass/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 85, ../sass/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 90, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 96, ../sass/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 105, ../sass/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_formalize.sass */
+.input_tiny {
+  width: 50px;
+}
+
+/* line 16, ../sass/_formalize.sass */
+.input_small {
+  width: 100px;
+}
+
+/* line 19, ../sass/_formalize.sass */
+.input_medium {
+  width: 150px;
+}
+
+/* line 22, ../sass/_formalize.sass */
+.input_large {
+  width: 200px;
+}
+
+/* line 25, ../sass/_formalize.sass */
+.input_xlarge {
+  width: 250px;
+}
+
+/* line 28, ../sass/_formalize.sass */
+.input_xxlarge {
+  width: 300px;
+}
+
+/* line 31, ../sass/_formalize.sass */
+.input_full {
+  width: 100%;
+}
+
+/* line 36, ../sass/_formalize.sass */
+.input_full_wrap {
+  display: block;
+  padding-right: 8px;
+}
+
+/* line 43, ../sass/_formalize.sass */
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 47, ../sass/_formalize.sass */
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+/* line 50, ../sass/_formalize.sass */
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* line 57, ../sass/_formalize.sass */
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -o-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -khtml-border-radius: 11px;
+  border-radius: 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #dddddd url(../images/button.png) repeat-x;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #ffffff, #dddddd);
+  background-image: -moz-linear-gradient(top, #ffffff, #dddddd);
+  background-image: -o-linear-gradient(top, #ffffff, #dddddd);
+  background-image: linear-gradient(top, #ffffff, #dddddd);
+  border: 1px solid;
+  border-color: #dddddd #bbbbbb #999999;
+  cursor: pointer;
+  color: #333333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px 4px;
+  text-shadow: white 0 1px 1px;
+  width: auto;
+  *padding-top: 2px;
+  *padding-bottom: 0px;
+}
+
+/* line 81, ../sass/_formalize.sass */
+button {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+/* line 86, ../sass/_formalize.sass */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  outline: 0;
+  padding: 2px 3px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  height: 1.8em;
+  *padding-top: 2px;
+  *padding-bottom: 1px;
+  *height: auto;
+}
+
+/* line 124, ../sass/_formalize.sass */
+input.placeholder-text,
+textarea.placeholder-text,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #888888;
+}
+
+/* line 130, ../sass/_formalize.sass */
+::-webkit-input-placeholder {
+  color: #888888;
+}
+
+/* line 133, ../sass/_formalize.sass */
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* line 148, ../sass/_formalize.sass */
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+/* line 160, ../sass/_formalize.sass */
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
+  background-color: #eeeeee;
+}
+
+/* line 177, ../sass/_formalize.sass */
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled] {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #888888;
+  cursor: default;
+}
+
+/* line 192, ../sass/_formalize.sass */
+.is_webkit select {
+  background-image: url(../images/select_arrow.gif);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+}
+
+/* line 200, ../sass/_formalize.sass */
+textarea,
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+/* line 206, ../sass/_formalize.sass */
+.is_webkit select[multiple] {
+  background-image: none;
+  padding: 0;
+}
+
+/* line 210, ../sass/_formalize.sass */
+textarea {
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+}
+
+/* line 216, ../sass/_formalize.sass */
+optgroup {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 244, ../sass/_formalize.sass */
+.ie6_button,
+* html button {
+  background: #dddddd url(../images/button.png) repeat-x;
+  border: 1px solid;
+  border-color: #dddddd #bbbbbb #999999;
+  cursor: pointer;
+  color: #333333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  padding: 2px 10px 0px;
+  overflow: visible;
+  width: auto;
+}
+
+/* line 256, ../sass/_formalize.sass */
+* html button {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* line 260, ../sass/_formalize.sass */
+.ie6_input,
+* html textarea,
+* html select {
+  background: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  padding: 2px 3px 1px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  vertical-align: top;
+}
+
+/* line 272, ../sass/_formalize.sass */
+* html select {
+  margin-top: 1px;
+}
+
+/* line 275, ../sass/_formalize.sass */
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled {
+  color: #888888;
+}
+
+/* line 280, ../sass/_formalize.sass */
+.ie6_input_disabled {
+  background: #eeeeee;
+}
+
+/*  Custom Mixins  */
+/*  Variables */
+/* line 55, ../sass/_base.scss */
+html, a {
+  color: black;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'AcknowledgementMedium';
+  src: url("../type/Acknowledgement-webfont.eot");
+  src: url("../type/Acknowledgement-webfont.eot?#iefix") format("embedded-opentype"), url("../type/Acknowledgement-webfont.woff") format("woff"), url("../type/Acknowledgement-webfont.ttf") format("truetype"), url("../type/Acknowledgement-webfont.svg#AcknowledgementMedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLTLight';
+  src: url("../type/futuralt-light-webfont.eot");
+  src: url("../type/futuralt-light-webfont.eot?#iefix") format("embedded-opentype"), url("../type/futuralt-light-webfont.woff") format("woff"), url("../type/futuralt-light-webfont.ttf") format("truetype"), url("../type/futuralt-light-webfont.svg#FuturaLTLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLTCondensedLight';
+  src: url("../type/futuralt-condensedlight-webfont.eot");
+  src: url("../type/futuralt-condensedlight-webfont.eot?#iefix") format("embedded-opentype"), url("../type/futuralt-condensedlight-webfont.woff") format("woff"), url("../type/futuralt-condensedlight-webfont.ttf") format("truetype"), url("../type/futuralt-condensedlight-webfont.svg#FuturaLTCondensedLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLTCondensed';
+  src: url("../type/futuralt-condensed-webfont.eot");
+  src: url("../type/futuralt-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("../type/futuralt-condensed-webfont.woff") format("woff"), url("../type/futuralt-condensed-webfont.ttf") format("truetype"), url("../type/futuralt-condensed-webfont.svg#FuturaLTCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLTRegular';
+  src: url("../type/futuralt-webfont.eot");
+  src: url("../type/futuralt-webfont.eot?#iefix") format("embedded-opentype"), url("../type/futuralt-webfont.woff") format("woff"), url("../type/futuralt-webfont.ttf") format("truetype"), url("../type/futuralt-webfont.svg#FuturaLTRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MidoMedium';
+  src: url("../type/Mido-webfont.eot");
+  src: url("../type/Mido-webfont.eot?#iefix") format("embedded-opentype"), url("../type/Mido-webfont.woff") format("woff"), url("../type/Mido-webfont.ttf") format("truetype"), url("../type/Mido-webfont.svg#MidoMedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BevanRegular';
+  src: url("../type/Bevan-webfont.eot");
+  src: url("../type/Bevan-webfont.eot?#iefix") format("embedded-opentype"), url("../type/Bevan-webfont.woff") format("woff"), url("../type/Bevan-webfont.ttf") format("truetype"), url("../type/Bevan-webfont.svg#BevanRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("../type/BebasNeue-webfont.eot");
+  src: url("../type/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../type/BebasNeue-webfont.woff") format("woff"), url("../type/BebasNeue-webfont.ttf") format("truetype"), url("../type/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwoRegular';
+  src: url("../type/LobsterTwo-Regular-webfont.eot");
+  src: url("../type/LobsterTwo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../type/LobsterTwo-Regular-webfont.woff") format("woff"), url("../type/LobsterTwo-Regular-webfont.ttf") format("truetype"), url("../type/LobsterTwo-Regular-webfont.svg#LobsterTwoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwoItalic';
+  src: url("../type/LobsterTwo-Italic-webfont.eot");
+  src: url("../type/LobsterTwo-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../type/LobsterTwo-Italic-webfont.woff") format("woff"), url("../type/LobsterTwo-Italic-webfont.ttf") format("truetype"), url("../type/LobsterTwo-Italic-webfont.svg#LobsterTwoItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwoBold';
+  src: url("../type/LobsterTwo-Bold-webfont.eot");
+  src: url("../type/LobsterTwo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../type/LobsterTwo-Bold-webfont.woff") format("woff"), url("../type/LobsterTwo-Bold-webfont.ttf") format("truetype"), url("../type/LobsterTwo-Bold-webfont.svg#LobsterTwoBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwoBoldItalic';
+  src: url("../type/LobsterTwo-BoldItalic-webfont.eot");
+  src: url("../type/LobsterTwo-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../type/LobsterTwo-BoldItalic-webfont.woff") format("woff"), url("../type/LobsterTwo-BoldItalic-webfont.ttf") format("truetype"), url("../type/LobsterTwo-BoldItalic-webfont.svg#LobsterTwoBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url("../type/League_Gothic-webfont.eot");
+  src: url("../type/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../type/League_Gothic-webfont.woff") format("woff"), url("../type/League_Gothic-webfont.ttf") format("truetype"), url("../type/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url("../type/Chunkfive-webfont.eot");
+  src: url("../type/Chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("../type/Chunkfive-webfont.woff") format("woff"), url("../type/Chunkfive-webfont.ttf") format("truetype"), url("../type/Chunkfive-webfont.svg#ChunkFiveRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CartoGothicStdBold';
+  src: url("../type/CartoGothicStd-Bold-webfont.eot");
+  src: url("../type/CartoGothicStd-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../type/CartoGothicStd-Bold-webfont.woff") format("woff"), url("../type/CartoGothicStd-Bold-webfont.ttf") format("truetype"), url("../type/CartoGothicStd-Bold-webfont.svg#CartoGothicStdBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CartoGothicStdBook';
+  src: url("../type/CartoGothicStd-Book-webfont.eot");
+  src: url("../type/CartoGothicStd-Book-webfont.eot?#iefix") format("embedded-opentype"), url("../type/CartoGothicStd-Book-webfont.woff") format("woff"), url("../type/CartoGothicStd-Book-webfont.ttf") format("truetype"), url("../type/CartoGothicStd-Book-webfont.svg#CartoGothicStdBook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChaparralProRegular';
+  src: url("../type/chaparralpro-regular-webfont.eot");
+  src: local("?"), url("../type/chaparralpro-regular-webfont.woff") format("woff"), url("../type/chaparralpro-regular-webfont.ttf") format("truetype"), url("../type/chaparralpro-regular-webfont.svg#webfontExzYMOwM") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/****************************************************************/
+/*************************             **************************/
+/*********************     Main Styles     **********************/
+/*************************             **************************/
+/****************************************************************/
+/* line 8, ../sass/style.scss */
+body {
+  overflow-y: scroll;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  font-family: "ChaparralProRegular";
+  color: rgba(209, 184, 178, 0.9);
+  text-align: justify;
+}
+
+/* line 16, ../sass/style.scss */
+a {
+  color: #a08079;
+}
+a:hover{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+ }
+
+/* line 18, ../sass/style.scss */
+a, .trans {
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+/* line 25, ../sass/style.scss */
+#background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1260, color-stop(0%, #281f1e), color-stop(100%, #191413));
+  background-image: -webkit-radial-gradient(50% 50%, #281f1e 0%, #191413 100%);
+  background-image: -moz-radial-gradient(50% 50%, #281f1e 0%, #191413 100%);
+  background-image: -o-radial-gradient(50% 50%, #281f1e 0%, #191413 100%);
+  background-image: radial-gradient(50% 50%, #281f1e 0%, #191413 100%);
+  z-index: -9999;
+}
+/* line 30, ../sass/style.scss */
+#background #pattern_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=3)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=3);
+  opacity: 0.03;
+  background-image: url(../images/p-overlay.png);
+}
+
+/* line 39, ../sass/style.scss */
+#main_wrapper {
+  width: 960px;
+  height: auto;
+  min-height: 680px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 45, ../sass/style.scss */
+#main_wrapper #posts_wrapper {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  width: 625px;
+  height: 100%;
+}
+/* line 54, ../sass/style.scss */
+#main_wrapper #posts_wrapper #date {
+  position: relative;
+  top: -20px;
+  margin-right: 5px;
+  width: 200px;
+  float: right;
+  clear: none;
+}
+/* line 62, ../sass/style.scss */
+#main_wrapper #posts_wrapper #date a h4 {
+  font-family: "CartoGothicStdBook";
+  font-size: 1.2em;
+  text-align: right;
+  color: #e5cac2;
+}
+/* line 68, ../sass/style.scss */
+#main_wrapper #posts_wrapper #date a h4 > span.month {
+  color: #a08079;
+  text-transform: uppercase;
+}
+/* line 72, ../sass/style.scss */
+#main_wrapper #posts_wrapper a.notes {
+  color: rgba(209, 184, 178, 0.9);
+  font-family: "CartoGothicStdBook";
+  font-size: .9em;
+  padding: 10px 5px 5px;
+  background: #5e514e;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  -ms-border-bottom-left-radius: 3px;
+  -khtml-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -o-border-bottom-right-radius: 3px;
+  -ms-border-bottom-right-radius: 3px;
+  -khtml-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  float: left;
+  clear: none;
+  z-index: 99;
+  position: relative;
+}
+/* line 86, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post {
+  width: 615px;
+  height: auto;
+  padding: 40px 5px;
+  border-top: 5px solid #5e514e;
+  position: relative;
+  margin: 0 0 150px;
+  line-height: 1.3em;
+  font-size: 1.0em;
+}
+
+#main_wrapper #posts_wrapper li.post p{
+	margin-bottom: 15px;
+}
+
+/* line 95, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post .center {
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+/* line 97, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post a h3.name, #main_wrapper #posts_wrapper li.post h3.title > a {
+  font-family: "ChunkFiveRegular";
+  color: #e5cac2;
+  font-size: 1.5em;
+  text-align: left;
+  width: auto;
+  max-width: 475px;
+  position: absolute;
+  top: -30px;
+  letter-spacing: 1px;
+}
+/* line 108, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post a.link {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  margin: 20px 0;
+  background: #e5cac2;
+  position: relative;
+  width: auto;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  top: 20px;
+  color: #242221;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0 inset;
+}
+/* line 121, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat {
+  text-align: left;
+  margin: 45px 15px 15px;
+  position: relative;
+  width: 585px;
+}
+/* line 127, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat li.odd, #main_wrapper #posts_wrapper li.post ul.chat li.even {
+  font-family: "MidoMedium";
+  width: 355px;
+  font-size: .8em;
+  line-height: 1.1em;
+  padding: 15px 25px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  background: #e5cac2;
+  color: #242221;
+  margin-top: -30px;
+  text-align: center;
+}
+/* line 139, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat li.even {
+  position: relative;
+  top: 0px;
+  left: 175px;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 142, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat img.callout.odd {
+  position: relative;
+  top: 0px;
+  left: 50px;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 143, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat img.callout.even {
+  position: relative;
+  top: 0px;
+  left: 470px;
+  bottom: 0px;
+  right: 0px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+/* line 152, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat #label {
+  font-family: "ChunkFiveRegular";
+  font-size: 1.4em;
+  color: #a08079;
+}
+/* line 153, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat #label.odd {
+  position: relative;
+  top: 0px;
+  left: 15px;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 154, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post ul.chat #label.even {
+  position: relative;
+  top: 0px;
+  left: 505px;
+  bottom: 0px;
+  right: 0px;
+}
+/* line 156, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post #question {
+  position: relative;
+  height: auto;
+  width: 500px;
+  padding: 15px;
+  background: #e5cac2;
+  color: #242221;
+  font-size: .8em;
+  line-height: 1.1em;
+  font-family: "MidoMedium";
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 168, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.post #answer {
+  position: relative;
+  margin: 20px auto;
+}
+/* line 173, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.text, #main_wrapper #posts_wrapper li.chat {
+  margin-top: 30px;
+}
+/* line 174, ../sass/style.scss */
+#main_wrapper #posts_wrapper li.audio {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding-top: 0px;
+}
+
+/* line 176, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media {
+  position: relative;
+  height: auto;
+  min-height: 200px;
+  width: 500px;
+  padding: 15px;
+}
+/* line 183, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media img.album_art {
+  padding-right: 20px;
+  width: 207px;
+  height: auto;
+  position: absolute;
+  clear: none;
+  left: 15px;
+}
+/* line 191, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media #play {
+  position: absolute;
+  left: 15px;
+  top: 222px;
+}
+/* line 192, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media #audio_info {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  width: 255px;
+  height: auto;
+  clear: none;
+}
+/* line 200, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media #audio_info h5.meta_data {
+  font-family: "CartoGothicStdBold";
+  text-tranform: uppercase;
+  font-size: 1.2em;
+  color: #a08079;
+}
+/* line 206, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media #audio_info > .caption {
+  padding: 0;
+  border: none;
+  margin: 5px auto;
+}
+/* line 208, ../sass/style.scss */
+#main_wrapper #posts_wrapper #media .caption {
+  font-family: "MidoMedium";
+  font-size: .8em;
+  margin: 15px auto;
+  line-height: 1.1em;
+  padding: 15px 15px;
+}
+/* line 216, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer {
+  position: relative;
+  top: -100px;
+  margin: 0px auto;
+  text-align: left;
+  margin: 20px 10px;
+}
+/* line 223, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer .tags {
+  position: absolute;
+  bottom: 40px;
+}
+/* line 226, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer .tags a {
+  text-decoration: underline;
+}
+/* line 227, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer .tags span {
+  text-decoration: none;
+}
+/* line 230, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer #notes {
+  margin: 20px 0;
+  font-family: "CartoGothicStdBook";
+  font-size: .8em;
+  color: #e5cac2;
+  line-height: 2.5em;
+}
+/* line 237, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer #notes a {
+  font-family: "CartoGothicStdBold";
+  text-decoration: underline;
+}
+/* line 238, ../sass/style.scss */
+#main_wrapper #posts_wrapper #post_footer #notes a.more_notes_link {
+  font-family: "ChunkFiveRegular";
+  color: #e5cac2;
+  font-size: 2em;
+  line-height: 3em;
+  text-decoration: none;
+}
+/* line 241, ../sass/style.scss */
+#main_wrapper #posts_wrapper a.next {
+  font-family: "ChunkFiveRegular";
+  color: #e5cac2;
+  font-size: 2em;
+  position: relative;
+  top: -100px;
+  float: right;
+}
+/* line 242, ../sass/style.scss */
+#main_wrapper #posts_wrapper a.prev {
+  font-family: "ChunkFiveRegular";
+  color: #e5cac2;
+  font-size: 2em;
+  position: relative;
+  top: -100px;
+  float: left;
+}
+
+/*** Close #main_wapper ***/
+/* line 246, ../sass/style.scss */
+#fixed_wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+/* line 252, ../sass/style.scss */
+#fixed_wrapper #floating_container {
+  position: relative;
+  width: 960px;
+  margin: 0px auto;
+}
+/* line 257, ../sass/style.scss */
+#fixed_wrapper #floating_container ul.nav {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  float: right;
+  z-index: 99999;
+}
+/* line 262, ../sass/style.scss */
+#fixed_wrapper #floating_container ul.nav > li {
+  font-size: .9em;
+  float: right;
+}
+/* line 266, ../sass/style.scss */
+#fixed_wrapper #floating_container ul.nav > li > a {
+  font-family: "CartoGothicStdBold";
+  color: #e5cac2;
+  display: block;
+  padding: 10px 5px 5px;
+  margin: 0 20px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
+}
+/* line 275, ../sass/style.scss */
+#fixed_wrapper #floating_container ul.nav > li > a.current, #fixed_wrapper #floating_container ul.nav > li a:hover {
+  border-bottom: 3px solid #e5cac2;
+}
+/* line 281, ../sass/style.scss */
+#fixed_wrapper #floating_container #exhibit {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 200px;
+  left: auto;
+  bottom: auto;
+  right: 15px;
+  -moz-border-radius: 126px;
+  -webkit-border-radius: 126px;
+  -o-border-radius: 126px;
+  -ms-border-radius: 126px;
+  -khtml-border-radius: 126px;
+  border-radius: 126px;
+  background: transparent;
+  border: 12px solid #e5cac2;
+  text-align: center;
+}
+/* line 289, ../sass/style.scss */
+#fixed_wrapper #floating_container #exhibit > img#home {
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+}
+/* line 290, ../sass/style.scss */
+#fixed_wrapper #floating_container #exhibit > img#info {
+  position: absolute;
+  top: 55px;
+  left: 90px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+}
+/* line 291, ../sass/style.scss */
+#fixed_wrapper #floating_container #exhibit > img#thoughts {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+}
+/* line 294, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav {
+  position: absolute;
+  right: 0px;
+  top: 500px;
+  width: 245px;
+  text-align: center;
+  z-index: 99999;
+}
+/* line 302, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav a.buttons {
+  width: 20px;
+  height: 20px;
+  float: left;
+  text-align: center;
+  margin-left: 10px;
+  background: url("../images/icons_sprite.png") no-repeat;
+  position: relative;
+  top: 0px;
+  left: 38px;
+  bottom: 0px;
+  right: 0px;
+  display: block;
+}
+#fixed_wrapper #floating_container #blog_nav a.buttons:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+}
+/* line 312, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav a#follow {
+  background-position: 0 0;
+}
+/* line 313, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav a#ask {
+  background-position: -20px 0;
+}
+/* line 314, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav a#archive {
+  background-position: -40px 0;
+}
+/* line 315, ../sass/style.scss */
+#fixed_wrapper #floating_container #blog_nav a#rss {
+  background-position: -60px 0;
+}
