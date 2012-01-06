@@ -656,8 +656,9 @@ a, .trans {
   top: 100px;
   left: 0px;
   bottom: 0px;
-  right: 0px;
+  right: 0px; 
   float: right;
+  margin-right: 70px;
 }
 /* line 46, ../sass/style.scss */
 #main_wrapper ul.nav > li {
