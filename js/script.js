@@ -117,8 +117,11 @@ jQuery(function() {
 				});
 			}
 			else{
-				first.clone().insertAfter(last).remove().slideUp(400);
-				first.next().children("#details").fadeTo(800, 1.0).delay(3500).fadeTo(800, 0.0);
+				first.slideUp(400, function(e){
+					first.clone().insertAfter(last).show();
+					first.remove();
+				});
+				first.next().children("#details").fadeTo(800, 1.0).delay(3000).fadeTo(800, 0.0);
 			}
 		});
 		$("body").keyup(function(event){
