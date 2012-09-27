@@ -828,8 +828,8 @@ a, .trans {
 /* line 105, ../sass/style.scss */
 #main_wrapper #exhibit > img#entreprenuer {
   position: absolute;
-  top: 55px;
-  left: 25px;
+  top: 50px;
+  left: 65px;
   bottom: 0px;
   right: 0px;
   display: none;
