@@ -942,23 +942,41 @@ a, .trans {
 #main_wrapper #work_examples #frame #details {
   position: absolute;
   top: 240px;
-  left: 120px;
+  left: -645px;
   bottom: 0px;
   right: 0px;
-  background: rgba(53, 44, 42, 0.95);
-  width: 390px;
-  height: 110px;
-  display: none;
+  background: rgba(32, 25, 24, 0.90);
+  width: 670px;
+  height: 114px;
   text-align: center;
   color: #eee5e2;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  border: 2px solid #d1c5c1;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
 }
+/*Details show button */
+#main_wrapper #work_examples #frame #details > img.detail-info{
+	position: absolute;
+	cursor: pointer;
+	top: 0px;
+	left: 645px;
+	height: auto;
+	width: auto;
+	display: normal;
+}
+
+#main_wrapper #work_examples #frame #details > img.detail-arrows{
+	position: absolute;
+	cursor: pointer;
+	left: 12px;
+	height: auto;
+	width: auto;
+	display: normal;
+}
+
 /* line 155, ../sass/style.scss */
 #main_wrapper #work_examples #frame #details > h1 {
   position: relative;
@@ -968,6 +986,7 @@ a, .trans {
   right: 0px;
   font-size: 1.7em;
   color: inherit;
+  pointer-events:none
 }
 /* line 156, ../sass/style.scss */
 #main_wrapper #work_examples #frame #details > h2 {
@@ -979,6 +998,7 @@ a, .trans {
   font-size: .8em;
   color: inherit;
   font-family: "CartoGothicStdBook";
+  pointer-events:none
 }
 /* line 162, ../sass/style.scss */
 #main_wrapper #work_examples #frame #details > a {
@@ -1000,38 +1020,7 @@ a, .trans {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 172, ../sass/style.scss */
-#main_wrapper #work_examples #frame #details #outline {
-  width: 370px;
-  height: 90px;
-  border: 2px solid #d1c5c1;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  bottom: 0px;
-  right: 0px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-}
-/* line 179, ../sass/style.scss */
-#main_wrapper #work_examples #frame #details.small {
-  width: 390px;
-  height: 80px;
-  position: absolute;
-  top: 255px;
-  left: 120px;
-  bottom: 0px;
-  right: 0px;
-}
-/* line 183, ../sass/style.scss */
-#main_wrapper #work_examples #frame #details.small #outline.small {
-  width: 370px;
-  height: 60px;
-}
+
 /* line 186, ../sass/style.scss */
 #main_wrapper #work_examples #frame.hidden {
   display: none;
@@ -1049,6 +1038,7 @@ a, .trans {
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px 1px inset;
   -o-box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px 1px inset;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px 1px inset;
+  pointer-events:none
 }
 /* line 193, ../sass/style.scss */
 #main_wrapper #work_examples #arrow {
