@@ -1,39 +1,15 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# humanstxt.org/
+# The humans responsible & technology colophon
 
+# TEAM
 
-/* TEAM */
-  <your title>: <your name>
-  Site: http://connor-mcnabb.com
-  Twitter: @Connor_McNabb
-  Location: Little Rock, AR
+    <name> -- <role> -- <twitter>
 
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery
+# THANKS
 
+    <name>
 
+# TECHNOLOGY COLOPHON
 
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+    HTML5, CSS3
+    jQuery, Modernizr

@@ -1,180 +1,256 @@
-<!doctype html>  
- 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
- 
-<head> 
-  <meta charset="utf-8"> 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Connor McNabb: Copywriter, Designer, Developer</title>
+        <meta name="I craft messages, aesthetics, and interfaces for people who need them." content="">
+		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
- 
-  <title>Connor McNabb</title> 
-  <meta name="description" content="Connor McNabb is a copywriter, web-developer and creative generalist living in North Little Rock, AR."> 
-  <meta name="author" content="Connor McNabb"> 
- 
-  <meta name="viewport" content="width=device-width, initial-scale=.4"> 
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--<link rel="apple-touch-icon" href="/apple-touch-icon-144x144-precomposed.png"/>-->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-  <link rel="stylesheet" href="css/style.css"> 
-</head>
-
-<body>
-	<div id="background">
-		<div id="pattern_overlay"></div>
-	</div>
-	<div id="main_wrapper">
-		<ul class="nav">
-			<!--<li><a href="http://blog.connor-mcnabb.com/" id="thoughts">Thoughts</a></li>-->
-			<li><a href="/info.html" id="info">Info</a></li>
-			<li><a class="current" href="" id="home">Home</a></li>
-		</ul>
-		<h1 class="name">Connor <br />McNabb</h1>
-		<div id="left_bracket"></div>
-		<ul class="cats">
-			<li><a id="copywriter" href="#Copywriter">Copywriter</a></li>
-			<li><a id="design" href="#Design-Dabbler">Graphic Designer</a></li>
-			<li><a id="web" href="#Web-Developer">Web Developer</a></li>
-			<li><a id="entreprenuer" href="#Entreprenuer">Entrepreneur</a></li>
-		</ul>
-		<div id="exhibit">
-			<img id="connor" class="current" src="img/connor.png" />
-			<img id="home" src="img/home.png" />
-			<img id="info" src="img/info.png" />
-			<img id="copywriter" src="img/copywriter.png" />
-			<img id="web" src="img/web.png" />
-			<img id="design" src="img/design.png" />
-			<img id="entreprenuer" src="img/think.png" />
-			<img id="close" src="img/close.png" />
+        <!-- Add your site or application content here -->
+       	<section id="intro" class="clearfix">
+			<div class="wrap">
+				<hgroup class="clearfix white">
+       				<h1>Hello</h1>
+					<h3>THIS IS THE STUDIO OF CONNOR MCNABB</h3>
+					<h4>I craft messages, aesthetics, and interfaces for people who need them.</h4>
+				</hgroup>
+			</div>
+		</section>
+		<div id="main-wrapper">
+		<header>
+			<div class="wrap">
+			<a href="#intro" id="title" class="scroll">CONNOR MCNABB</a>
+			<nav class="clearfix">
+				<button id="toggle-nav" class="inactive"></button>
+				<ul>
+					<li><a href="#contact" class="scroll">CONTACT</a></li>
+					<li><a href="#work" class="scroll">WORK</a></li>
+					<li><a href="#about" class="scroll">ABOUT</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+		<section id="about" class="wrap clearfix">
+			<figure class="me"><div class="fill"></div></figure>
+			<p id="blurb">By good fortune, I've been able to write, design, and code for a living. Though these are my crafts, my domain lies in the ideas that make them necessary.</p>
+		</section>
+		<section id="work" class="wrap">
+			<div id="worklist">
+				<hgroup class="section-header">
+					<h2>A COLLECTION OF WORK</h2>
+					<h5>and fun. and work-fun.</h5>
+				</hgroup>
+				<div id="work-items-wrapper" class="clearfix">
+					<button class="work-items" name="negroni" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="the-norma-jean" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="new-cartographers" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="cartoCMS" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="the-people-tree" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="nyc-collaborates" type="button"><div class="fill"></div></button>
+					<button class="work-items" name="this-site" type="button"><div class="fill"></div></button>
+				</div>
+			</div>
+			<button id="thumbnails" style="display: none"></button>
+			<article id="negroni" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>Cocktail Series</h2>
+					<h5>Negroni Prints</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/negroni-print.png" class="square" />
+					<p class="square">
+						What started as an exercise to brush up on my illustrator chops has quickly become one of my favorite creative outlets. The task is simple: make a cocktail, drink it, illustrate it.<br />Special thanks to the folks at <a href="" class="inline">Post Prohibition</a> for the long list of inspirational libations, along with the geniuses at <a href="" class="inline">Lost Type</a> for designing fonts that anybody would want to work with.<br />If you would like a print, or a design of your favorite drink, feel free to <a href="#contact" class="inline">contact me</a>.
+					</p>
+				</div>
+			</article>
+			<article id="the-norma-jean" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>Cocktail Series</h2>
+					<h5>Norma Jean Prints</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/normajean-print.png" class="square" />
+					<p class="square">
+						What started as an exercise to brush up on my illustrator chops has quickly become one of my favorite time-wasters. The task is simple: make a cocktail, drink it, illustrate it.<br />Special thanks to Josh Sullivan at <a href="http://postprohibition.com/" class="inline">Post Prohibition</a> for the long list of inspirational libations, along with the geniuses at <a href="http://losttype.com/" class="inline">Lost Type</a> for designing fonts that anybody would want to work with.<br />If you would like a print, or a design of your favorite drink, feel free to <a href="#contact" class="inline">contact me</a>.
+					</p>
+				</div>
+			</article>
+			<article id="new-cartographers" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>New Cartographers</h2>
+					<h5>Co-founder, web-designer, copywriter</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/nccom1.png" class="website" />
+					<p class="website">
+						Founded by myself and two others, New Cartographers is half creative agency, half freelance cooperative.<br />Working together, we've been able to tackle larger projects than any one of us could have handled alone, helping clients build effective brands and strengthen their presence on the web. 
+					</p>
+				</div>
+				<div class="details-wrapper clearfix">
+					<img src="img/nccom2.png" class="website" />
+					<p class="website">
+						Since our founding in January, 2012, my roles have included account manager, project lead, lead copywriter, and web-designer.<br />Our single page site is the product of a 24-hour rush branding effort prior to successfully pitching our first client.
+					</p><br />
+					<a href="http://new-cartographers.com" class="visit" target="_blank">VISIT SITE</a>
+				</div>
+			</article>
+			<article id="cartoCMS" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>CartoCMS</h2>
+					<h5>Designer, co-author</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/ccms1.png" class="website" />
+					<p class="website">
+						 CartoCMS is a custom content management system designed and developed for New Cartographers and built using Ruby on Rails. I handled the UI/UX design, while <a href="http://briandmcnabb.com" class="inline" target="_blank">Brian McNabb</a> handled the code.<br />A reaction against the often cumbersome pre-fab CMS's on the market today, CartoCMS is a streamlined set of tools that we customize to suit the specific needs of each client.
+					</p>
+				</div>
+				<div class="details-wrapper clearfix">
+					<img src="img/ccms2.png" class="website" />
+					<p class="website">
+						Among other things, the CMS features content archiving, batch asset uploading, dynamic page creation / templating, in-page editing, multiple user accounts, and user tracking / statistics.
+					</p><br />
+				</div>
+			</article>
+			<article id="the-people-tree" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>The People Tree</h2>
+					<h5>Copywriting, strategy, identity</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/tpt1.png" class="website" />
+					<p class="website">
+						The People Tree is a non-profit organization working to promote societal systems that are economically, environmentally, and socially just.<br />The project, undertaken by New Cartographers, consisted of web development and brand strategy.
+					</p>
+				</div>
+				<div class="details-wrapper clearfix">
+					<img src="img/tpt2.png" class="website" />
+					<p class="website">
+						During the project, I acted as account manager, lead copywriter, and web strategist.
+					</p><br />
+					<a href="http://thepeopletree.us" class="visit" target="_blank">VISIT SITE</a>
+				</div>
+			</article>
+			<article id="nyc-collaborates" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>NYC Collaborates</h2>
+					<h5>Branding and website</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/nycc2.png" class="website" />
+					<p class="website">
+						NYC Collaborates is a Gates funded initiative focused on promoting collaboration between district and charter schools.<br /> The project, undertaken by New Cartographers, included both branding and website development.
+					</p>
+				</div>
+				<div class="details-wrapper clearfix">
+					<img src="img/nycc1.png" class="website" />
+					<p class="website">
+						During the project, I served as account manager, lead copywriter, web strategist and web designer.
+					</p><br />
+					<a href="http://nyccollaborates.org" class="visit" target="_blank">VISIT SITE</a>
+				</div>
+			</article>
+			<article id="this-site" class="visuallyhidden clearfix">
+				<hgroup class="section-header">
+					<h2>THIS SITE</h2>
+					<h5>Rebranded. Redesigned. Responsive.</h5>
+				</hgroup>
+				<div class="details-wrapper clearfix">
+					<img src="img/this-site.png" class="website borderless" />
+					<p class="website">
+						I'm a firm believer in learning by doing. A project born out of a desire to learn responive design, this website was built using the <a href="http://www.lukew.com/ff/entry.asp?933" class="inline" target="_blank">Mobile First</a> technique and will fluidly adapt to just about any viewport size you throw at it.<br />The site was designed and developed by me.
+					</p>
+				</div>
+			</article>
+		</section>
+		<section id="contact" class="wrap clearfix">
+			<hgroup class="section-header">
+				<h2>WANT TO WORK TOGETHER?</h2>
+				<h5>Tell me a bit about your project.</h5>
+			</hgroup>
+			<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHh0UndJcGh2UTdhajdBSzlickVGbEE6MQ" method="POST" class="clearfix">
+				<div class="form-wrap clearfix left">
+					<input type="text" name="entry.0.single" value="" class="ss-q-short" placeholder="First Last" id="entry_0" required /><input type="text" name="entry.1.single" value="" class="ss-q-short" placeholder="Company LLC" id="entry_1" /><input type="text" name="entry.2.single" value="" class="ss-q-short" placeholder="example@gmail.com" id="entry_2" required /><input type="text" name="entry.3.single" value="" class="ss-q-short" placeholder="Budget" id="entry_3" />
+				</div>
+				<div class="form-wrap clearfix right">
+					<textarea name="entry.4.single" value="" class="ss-q-long" placeholder="I would like a ..." maxlength="200" id="entry_4" required></textarea>
+					<input type="submit" value="submit"/>
+				</div>
+			</form>
+			<div id="counter-div"></div>
+			<div class="center-wrap">
+				<div id="social-wrapper">
+					<a href="http://twitter.com/connor_mcnabb" class="social" id="twitter" target="_blank">twitter</a>
+					<a href="http://instagram.com/connor_mcnabb" class="social" id="instagram" target="_blank">instagram</a>
+					<a href="http://www.linkedin.com/in/connormcnabb" class="social" id="linkedin" target="_blank">linkedin</a>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
 		</div>
-		<div id="extender_bar"></div>
-		<div id="right_bracket"></div>
 		
-		<!-- Portfolio Stuff -->
 		
-		<div id="work_examples">
-			<div id="frame" class="design web">  <!-- HU Queer Press Home -->
-				<img src="img/huqp.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>HU Queer Press</h1>
-					<h2>Designer & Developer</h2>
-					<a href="http://huqueerpress.com" target="_blank">Go to the Site</a>
-				</div>
-			</div>
-			<div id="frame" class="copywriter"> <!-- Storage Econimics 1 -->
-				<img src="img/Storage_E.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>Global Consultancy</h1>
-					<h2>Contract Copywriter -- Marketing Collateral</h2>
-				</div>
-			</div>
-			<div id="frame" class="design entreprenuer copywriter"> <!-- New Cartorgraphers -->
-				<img id="tall" src="img/nc-holdingpage.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>New Cartographers, LLC</h1>
-					<h2>Co-Founder, Copywriter, & Web Designer</h2>
-					<a href="http://new-cartographers.com" target="_blank">Go to the Site</a>
-				</div>
-			</div>
-			<div id="frame" class="web design entreprenuer"> <!-- TA Messages -->
-				<img id="tall" src="img/ta-messages.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>TourAutomator - Messaging</h1>
-					<h2>Co-Founder, Designer & Developer</h2>
-					<br />
-					<h2>*On Hiatus*</h2>
-				</div>
-			</div>
-			<div id="frame" class="copywriter entreprenuer web design"> <!-- TA About -->
-				<img id="tall" src="img/ta-story.png" />
-			</div>
-			<div id="frame" class="copywriter entreprenuer web design"> <!-- TA Home -->
-				<img id="tall" src="img/ta-homepage.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>TourAutomator - Beta Pages</h1>
-					<h2>Co-Founder, Copywriter, Designer & Developer</h2>
-					<br />
-					<h2>*On Hiatus*</h2>
-				</div>
-			</div>
-			<div id="frame" class="copywriter"> <!-- Nashville Espresso About -->
-				<img id="large" src="img/nec-a.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>Nashville Espresso Co.</h1>
-					<h2>Copywriter, Designer & Developer</h2>
-				</div>
-			</div>
-			<div id="frame" class="copywriter design web"> <!-- Nashville Espresso Home -->
-				<img id="large" src="img/nec.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>Nashville Espresso Co.</h1>
-					<h2>Copywriter, Designer & Developer</h2>
-				</div>
-			</div>
-			<div id="frame" class="design entreprenuer"> <!-- CartoInterior -->
-				<img id="tall" src="img/CartoCMS.png" />
-			</div>
-			<div id="frame" class="design entreprenuer"> <!-- CartoLogin -->
-				<img id="tall" src="img/CartoLogin.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>CartoCMS</h1>
-					<h2>Designer</h2>
-				</div>
-			</div>
-			<div id="frame" class="copywriter"> <!-- The People Tree -->
-				<img id="large" src="img/tpt-head.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>The People Tree</h1>
-					<h2>Copywriter, Creative Director</h2>
-					<a href="http://thepeopletree.us" target="_blank">Go to the Site</a>
-				</div>
-			</div>	
-			<div id="frame" class="copywriter"> <!-- Storage Econimics 2 -->
-				<img src="img/Storage_E2.png" />
-			</div>
-			<div id="frame" class="design web"> <!-- HU Queer Press About -->
-				<img id="taller" src="img/huqp-a.png" />
-				<div id="details">
-					<img class="detail-info" src="img/detail-info.png" />
-					<img class="detail-arrows" src="img/detail-arrows.png" />
-					<h1>HU Queer Press</h1>
-					<h2>Designer & Developer</h2>
-					<a href="http://huqueerpress.com/about.html" target="_blank">Go to the Site</a>
-				</div>
-			</div>
-			<div id="arrow" class="up trans"></div><div id="arrow" class="down trans"></div>
-			<div id="innershadow"></div>
-		</div><!-- Close Work Examples -->
-	</div><!-- close main-wrapper -->
-	
+		<!-- Scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function(e){
+				$("h1").fitText(0.334);
+				$("h3").fitText(2);
+			});
+		</script>
+		<script type="text/javascript">
+		$('#counter-div').hide('slow');
+		$('textarea').on('keyup', function() {
+		    $('#counter-div').show('slow');
+		    // Store the maxlength and value of the field.
+		    var maxlength = $(this).attr('maxlength');
+		    var val = $(this).val();
+		    var vallength = val.length;
+		    var remaining = maxlength - vallength;
+		    $("#counter-div").html(remaining);
+		    
+		    // red color
+		    if (remaining <= 15) {
+		        $('#counter-div').css('color', 'rgb(204, 76, 59)');
+		    }
+		    else {
+		        $('#counter-div').css('color', 'rgb(233, 233, 234)');
+		    }
+		    
+		    // Trim the field if it has content over the maxlength.
+		    if (vallength > maxlength) {
+		        $(this).val(val.slice(0, maxlength));
+		    }
+		});
+		$('#your-text-area').on('blur', function() {
+		    $('#counter-div').hide('slow');
+		});
+		</script>
 		
-	<script type="text/javascript">
-    var _gaq=[['_setAccount','UA-20855519-2'],['_trackPageview'],['_trackPageLoadTime'],['_setAllowAnchor', true]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-  
-	<script src="js/libs/jquery-1.6.4.min.js"></script>
-	<script src="js/libs/jquery-ui-1.8.16.custom.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
