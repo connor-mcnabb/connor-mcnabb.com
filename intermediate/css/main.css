@@ -1,0 +1,928 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.no-touch h1, .no-touch button.work-items, .no-touch a, .no-touch section{    
+    transition: all .3s ease; 
+    -o-transition: all .3s ease; 
+    -moz-transition: all .3s ease; 
+    -webkit-transition: all .3s ease;
+ }
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'dude_hankregular';
+    src: url('../type/dude_hank-webfont.eot');
+    src: url('../type/dude_hank-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/dude_hank-webfont.woff') format('woff'),
+         url('../type/dude_hank-webfont.ttf') format('truetype'),
+         url('../type/dude_hank-webfont.svg#dude_hankregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostilebold';
+    src: url('../type/eurostile-bold-webfont.eot');
+    src: url('../type/eurostile-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/eurostile-bold-webfont.woff') format('woff'),
+         url('../type/eurostile-bold-webfont.ttf') format('truetype'),
+         url('../type/eurostile-bold-webfont.svg#eurostilebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostileregular';
+    src: url('../type/eurostile-webfont.eot');
+    src: url('../type/eurostile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/eurostile-webfont.woff') format('woff'),
+         url('../type/eurostile-webfont.ttf') format('truetype'),
+         url('../type/eurostile-webfont.svg#eurostileregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ClassicRoundMediumRegular';
+    src: url('../type/ClassicRound-Medium-webfont.eot');
+    src: url('../type/ClassicRound-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/ClassicRound-Medium-webfont.woff') format('woff'),
+         url('../type/ClassicRound-Medium-webfont.ttf') format('truetype'),
+         url('../type/ClassicRound-Medium-webfont.svg#ClassicRoundMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+section#intro{
+    position: fixed; 
+    width: 100%;
+    height: 700px;
+    background: rgb(204, 76, 59) url('../img/red-noise.png') repeat right top;
+    z-index: -999999;
+}
+
+.wrap {
+	min-width: 200px;
+	width: 90%;
+	margin: 0 auto;
+    position: relative;
+}
+header, section {clear:both;}
+
+.white{color: rgb(250, 250, 250)}
+.black{color: rgb(34, 40, 45);}
+
+section#intro hgroup{
+	float: right;
+	clear: both;
+	text-align: left;
+	width: 100%;
+	padding-top: 35px;
+}
+
+h1 {
+	font-family: "dude_hankregular";
+	font-size: 6.85em;
+	line-height: 1em;
+	width: 100%;
+	display: block;
+	letter-spacing: 0;
+}
+h2{
+    font-family: "eurostilebold";
+    font-size: 1.6em;
+    line-height: 1.1em;
+    width: 100%;
+    display: block;
+}
+h3{
+	font-family: "eurostilebold";
+	font-size: 1.1em;
+	line-height: 1.1em;
+	width: 100%;
+	display: block;
+}
+h4{
+	font-family: "eurostileregular";
+	font-size: .8em;
+    margin-top: .3em;
+    line-height: 1.1em;
+    width: 100%;
+}
+h5{
+    font-family: "ClassicRoundMediumRegular";
+    font-size: .85em;
+    color: rgb(88, 92, 96);
+}
+
+hgroup.section-header{
+    padding: 1em 0;
+    border-top: 1px solid rgb(232, 233, 234); /*.6em*/
+}
+
+header{background-color: rgb(34, 40, 45); border-bottom: .6em solid rgb(232, 233, 234); width: 100%; z-index: 99999;}
+
+a#title{
+    font-family: "eurostilebold";
+    color: rgb(250, 250, 250);
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+    float: left;
+    vertical-align: middle;
+    line-height: 2.35em;
+    padding: .55em 0;
+    white-space: nowrap;
+}
+
+a#title:before{
+    background: url('../img/lettermark.png') no-repeat center center;
+    background-size: 1.5em auto;
+    width: 2.1em;
+    height: 2.1em;
+    display: inline-block;
+    float:left;
+    padding-right: 10px;
+    content: "";
+    white-space: nowrap;
+}
+html.svg a#title:before{background: url('../img/lettermark.svg') no-repeat center center; background-size: 1.5em auto;}
+
+nav > button#toggle-nav{
+	float: right;
+    background: url('../img/menu-toggle.png') no-repeat left top;
+    background-size: 2.3em auto;
+    width: 2.3em;
+    height: 2.3em;
+    border: none;
+    position: relative;
+    top: .7em;
+    display: block;
+}
+
+.inactive{opacity: 0.15;}
+
+nav > ul {
+    display: none;
+    margin: 0;
+    float: right;
+    clear: both;
+}
+
+nav > ul > li{
+    float: right;
+    text-align: right;
+    margin: 0 .8em;
+}
+nav > ul > li:first-child{margin: 0 .5em 0 .8em;}
+
+nav > ul > li a{
+    display: block;
+    font-family: "Eurostilebold";
+    font-size: .8em;
+    color: rgb(68, 73, 76);
+    padding: .5em;
+}
+
+#main-wrapper{
+    margin: 0;
+    width: 100%;
+    background: rgb(250, 250, 250) url('../img/white-noise.png') repeat right top;
+    position: relative;
+    top: 220px;
+}
+.no-touch #main-wrapper{
+    transition: top .3s ease; 
+    -o-transition: top .3s ease; 
+    -moz-transition: top .3s ease; 
+    -webkit-transition: top .3s ease;
+}
+#main-wrapper > section{
+    position: relative;
+    padding-top: 1.5em;
+}
+
+figure.me{
+    position: relative;
+    height: 35%;
+    width: 35%;
+    margin: 25px auto 20px;
+    background: rgb(250, 250, 250) url(../img/connor-mcnabb-150.png) no-repeat left top;
+    background-size: 100% 100%;
+}
+
+p{
+    font-family: "ClassicRoundMediumRegular";
+    color: rgb(44, 46, 48);
+}
+
+p > a{
+    color: rgb(204, 76, 59);
+}
+p > a:visited{
+    color: rgb(204, 76, 59);
+}
+p > a:hover{
+    text-decoration: underline;
+}
+
+section#about > p#blurb{
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: 1.7;
+    text-align: left;
+}
+
+#work-items-wrapper{
+	margin: 0;
+}
+
+button.work-items {
+    width: 100%;
+	min-width: 220px;
+	margin: 10px 0;
+	border: none;
+    float: left;
+    padding: 0;
+    background-size: auto 100%;
+    background-color: rgb(34, 40, 45);
+}
+.image-wrapper{float: left; margin: 0; position: relative; display: block; width: 100%;}
+img.square, img.website{
+    width: 100%;
+    max-width: 525px;
+    height: auto;
+    display: block;
+}
+img.website{
+    max-width: 975px !important;
+    border-top: .6em solid rgb(232, 233, 234);
+    border-bottom: .6em solid rgb(232, 233, 234);
+}
+.borderless{border: none !important;}
+
+p.square, p.website{
+    font-size: .9em;
+    line-height: 1.8em;
+    display: inline-block;
+    margin: 1em 0;
+}
+.details-wrapper > p > br{line-height: 3em;}
+
+/* Load Vectors if Browser Supports SVG */
+
+html.svg [name=negroni] {
+	background-image: url('../img/negroni-button.svg');
+}
+html.svg [name=the-norma-jean] {
+    background-image: url('../img/normajean-button.svg');
+}
+html.svg [name=cartoCMS] {
+    background-image: url('../img/cartoCMS-button.svg');
+}
+html.svg [name=new-york-city-charter-school-center] {
+    background-image: url('../img/nyccsc-button.svg');
+}
+html.svg [name=new-cartographers] {
+    background-image: url('../img/newcartographers-button.svg');
+}
+html.svg [name=the-people-tree] {
+    background-image: url('../img/tpt-button.svg');
+}
+html.svg [name=nyc-collaborates] {
+    background-image: url('../img/nycc-button.svg');
+}
+html.svg [name=this-site] {
+    background-image: url('../img/this-site-button.svg');
+}
+
+/* PNG Fallbacks */
+
+[name=negroni] {
+    background-image: url('../img/negroni-button.png');
+}
+[name=the-norma-jean] {
+    background-image: url('../img/normajean-button.png');
+}
+[name=cartoCMS] {
+    background-image: url('../img/cartoCMS-button.png');
+}
+[name=new-york-city-charter-school-center] {
+    background-image: url('../img/nyccsc-button.png');
+}
+[name=new-cartographers] {
+    background-image: url('../img/newcartographers-button.png');
+}
+[name=the-people-tree] {
+    background-image: url('../img/tpt-button.png');
+}
+[name=nyc-collaborates] {
+    background-image: url('../img/nycc-button.png');
+}
+[name=this-site] {
+    background-image: url('../img/this-site-button.png');
+}
+
+#thumbnails{
+    background: url('../img/thumnails.png') no-repeat left top;
+    background-size: 100% 100%;
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 3em;
+    display: none;
+}
+html.svg #thumbnails{background: url('../img/thumbnails.svg') no-repeat left top; background-size: 100% 100%;}
+
+a.visit{
+    font-family: "eurostileregular";
+    font-size: .9em;
+    color: rgb(34, 40, 45);
+}
+.fill{padding-top: 100%; border: none;} /* Width == Height HACK */
+
+.no-touch button.work-items:hover {
+    background-color: rgb(204, 76, 59);
+}
+
+.left{float: left;}
+.right{float: right;}
+
+form{width: 100%; position: relative; overflow: hidden;}
+
+.form-wrap{width: 100%; height: 100%; position: relative; margin: 0;}
+.form-wrap > * {
+  -webkit-border-radius: 0 !important; 
+  -moz-border-radius: 0 !important; 
+  border-radius: 0 !important; 
+}
+.form-wrap input, textarea{
+    background-color: rgb(232, 233, 234);
+    font-size: .8em;
+    padding: 1.5%;
+}
+
+.form-wrap input[type="text"]{
+    margin-bottom: 2%;
+    display: inline-block;
+    border: none;
+    position: relative;
+    font-family: "eurostileregular";
+}
+.form-wrap input:-moz-placeholder {
+    text-indent:.4em;     
+}
+.form-wrap textarea:-moz-placeholder {
+    text-indent:.4em;
+}
+
+input[name="entry.0.single"]{
+    width: 46%;
+    float: left;
+}
+
+input[name="entry.1.single"]{
+    width: 46%;
+    float: right;
+}
+
+input[name="entry.2.single"]{
+    width: 67%;
+    float: left;
+}
+
+input[name="entry.3.single"]{
+    width: 25%;
+    float: right;
+    text-align: center;
+}
+
+textarea{
+    width: 90%;
+    height: 3.7em;
+    border: none;
+    font-family: "eurostileregular";
+}
+input[type="submit"]{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 93%;
+    right: 0;
+    background: rgb(204, 76, 59) url('../img/send.png') no-repeat center center;
+    background-size: 35% auto;
+    padding: 0;
+    border: none;
+    display: block;
+    height: 100%;
+    font-size: 0;
+    text-indent: -999999em;
+    text-transform: capitalize;
+    width: 7%;
+}
+.center-wrap{text-align: center;}
+
+#counter-div{font-family: "eurostilebold"; font-size: .8em; float: right;}
+
+#social-wrapper{
+    padding: 1.5em 0;
+    position: relative;
+    text-align: center;
+    margin: 1.5em auto 0;
+    border-top: 1px solid rgb(232, 233, 234); /*.6em*/
+
+}
+a.social{
+    background-image: url('../img/social-icons.png');
+    background-repeat: no-repeat;
+    background-size: 16em auto;
+    height: 4em;
+    width: 4em;
+    display: inline-block;
+    color: transparent;
+    text-indent: -9999px;
+}
+.no-touch a.social:hover{
+    opacity: .95;
+}
+html.svg a.social{
+    background-image: url('../img/social-icons.svg');
+}
+a#twitter{background-position: 0 0;}
+a#dribbble{background-position: -4em 0;}
+a#instagram{background-position: -8em 0;}
+a#linkedin{background-position: -12em 0;}
+
+footer{height: 3em; background-color: rgb(34, 40, 45);}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 740px){
+    a#title{
+    margin: 0;
+    }
+
+	button#toggle-nav{
+		display: none;
+    	visibility: hidden;
+	}
+	nav > ul {
+		display: inline-block !important;
+        position: relative;
+        clear: none;
+        float: right;
+        padding: .5em 0;
+        top: .55em;
+    }
+    nav > ul > li > a{
+        color: rgb(250, 250, 250); 
+        padding: .4em .2em;
+    }
+    .no-touch nav > ul > li > a{
+        border-bottom: .2em solid rgb(34, 40, 45);
+    }
+    .no-touch li > a:hover{ border-color: rgb(204, 76, 59); }
+
+    figure.me{
+        width: 23%;
+        height: auto;
+        background-image:url(../img/connor-mcnabb.png);
+    }
+
+    section#about > p#blurb{
+        width: 69%;
+        margin: 1% 0 0 4%;
+    }
+    .details-wrapper{margin-bottom: 2em;}
+    .details-wrapper:before{content:''; height: 100%; display: inline-block; vertical-align: middle;}
+    img.square{width: 40.425532%; margin-right: 3.319149%; display: inline-block;}
+    p.square{width: 54.255319%; display: inline-block; vertical-align: middle;}
+    img.website{
+        width: 75%;
+        margin-right: 4%;
+        float: left;
+    }
+    p.website{
+        width: 21%;
+        float: left;
+        font-size: .7em;
+        line-height: 1.8em;
+        border-top: 1px solid rgb(232, 233, 234);
+        border-bottom: 1px solid rgb(232, 233, 234);
+        padding: 1em 0;
+        margin-top: 0;
+    }
+    .form-wrap{width: 49.5%; display: inline-block;}
+
+    #social-wrapper{
+        display: inline-block;
+        padding: 1.5em 3em;
+    }
+
+    a.social{
+    background-size: 10em auto;
+    height: 2.5em;
+    width: 2.5em;
+    }
+
+    a#twitter{background-position: 0 0;}
+    a#dribbble{background-position: -2.5em 0;}
+    a#instagram{background-position: -5em 0;}
+    a#linkedin{background-position: -7.5em 0;}
+}
+
+@media only screen and (min-width: 1400px){
+    body{font-size: 1.8em;}
+    section#intro hgroup{
+        width: 55%;
+        padding-top: 135px;
+    }
+    .wrap {
+        width: 1300px;
+    }
+    #main-wrapper{top: 520px;}
+    #work-items-wrapper{
+        margin: 0 -1%;
+    }
+
+    button.work-items {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1399px){
+	
+    body{font-size: 1.35em;}
+    section#intro hgroup{
+        width: 50%;
+        padding-top: 100px;
+    }
+    #main-wrapper{top: 412px;}
+    .wrap {
+		width: 940px;
+	}
+
+	#work-items-wrapper{
+		margin: 0 -1%;
+	}
+
+	button.work-items {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 999px) {
+
+	body{font-size: 1.02em;}
+    section#intro hgroup{
+        width: 50%;
+        padding-top: 70px;
+    }
+    #main-wrapper{top: 280px;}
+    .wrap{
+		width: 720px;
+	}
+
+	#work-items-wrapper{
+		margin: 0 -1.1666667%;
+	}
+	
+	button.work-items {
+		margin: 1.166667% ;
+		width: 31%;
+	}
+}
+@media only screen and (min-width: 480px){
+    figure.me{
+        vertical-align: middle;
+        display: inline-block;
+    }
+    section#about:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    section#about > p#blurb{
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 739px) {
+	
+    body{font-size: 1.1em;}
+    #main-wrapper{top: 246px;}
+	.wrap{
+        width: 90%;
+		min-width: 460px;
+	}
+
+	section#intro hgroup{
+		width: 65%;
+		padding-top: 35px;
+	}
+    figure.me{
+        height: 23%;
+        width: 23%;
+    }
+    section#about > p#blurb{
+        width: 74%;
+        margin: 2% 0 0 1%;
+        font-size: .8em;
+    }
+	#work-items-wrapper{
+		margin: 0 -1%;
+	}
+
+	button.work-items {
+		margin: 1%;
+		width: 48%;
+	}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 739px) {
+    .touch header{
+        position: fixed;
+        top: -.1em;
+    }
+    .touch #main-wrapper{top: 17em; border-top: .6em solid rgb(232, 233, 234);}
+    .touch section#intro{
+        top: 3.4em;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

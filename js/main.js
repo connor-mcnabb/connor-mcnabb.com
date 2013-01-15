@@ -1,4 +1,3 @@
- 
 jQuery(function() {
 	// Index Page
 	$("button.work-items").live('click', function(e){

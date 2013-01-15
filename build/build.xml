@@ -451,30 +451,31 @@
     </target>
     
     <!-- JAVASCRIPT -->
-    <!-- Alternative version of -js.main.concat target 
+    <!-- Disable AutoConcat 
+
+         Alternative version of -js.main.concat target 
          uncomment this and comment out the next target to do a manual filelist
          
          To use, add your files to the list of file names, e.g.
          
          <file name="plugins.js"/>
-         <file name="scripts.js"/>
-         <file name="foo.js"/>
-         <file name="bar.js"/>
+         <file name="main.js"/>
         
         It's not magic, but at least now you can bypass the automatic concatenation. 
+    -->
     
     <target name="-js.main.concat" depends="-js.all.minify" description="(PRIVATE) Concatenates the JS files in dir.js">
         <filelist id="scripts.toconcat" dir="./${dir.intermediate}/">
-          <file name="plugins.js"/>
-          <file name="scripts.js"/>
+          <file name="js/main.js"/>
+          <file name="js/plugins.js"/>
         </filelist>
         
         <concat destfile="./${dir.intermediate}/${dir.js}/scripts-concat.min.js" overwrite="no">
             <filelist refid="scripts.toconcat"/>
         </concat>
     </target>
-   -->
-   
+
+   <!-- Auto Concat (Uncomment to enable)
     <target name="-js.main.concat" depends="-js.all.minify" description="(PRIVATE) Concatenates the JS files in dir.js">
         <filelist id="file.root" dir="${dir.source}" files="${file.root.page}"/>
         <echo message="Concatenating Main JS scripts based on ${file.root.page}..."/>
@@ -489,13 +490,11 @@
         </apply>
         <filelist id="scripts.toconcat" dir="./${dir.intermediate}/" files="${scripts.ordered}">
         </filelist>
-        
-        <!-- overwrite=no here means not to overwrite if the target is newer than the sources -->
         <concat destfile="./${dir.intermediate}/${dir.js}/scripts-concat.min.js" overwrite="no">
             <filelist refid="scripts.toconcat"/>
         </concat>
     </target>
-
+   -->
     <target name="-js.scripts.concat" depends="-js.main.concat" if="build.concat.scripts">
         <echo message="Concatenating library file with main script file"/>
         <if>
